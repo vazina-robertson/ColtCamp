@@ -1,12 +1,19 @@
 const express = require('express');
 const app = express();
 
-app.set('views engine', 'ejs');
+app.set('view engine', 'ejs');
 
 app.get('/', function(req, res)
 {
     res.render('landing');
 });
+
+// app.get('/campground', function(req, res)
+// {
+//   const campgrounds = [
+//
+//   ]
+// });
 
 app.listen(process.env.PORT || 3000, process.env.IP || 'localhost', function()
 {
