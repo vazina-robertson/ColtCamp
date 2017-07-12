@@ -1,3 +1,5 @@
+// Routers are defined here
+
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -10,7 +12,12 @@ const campgrounds = [
   {name: 'ABC Lodge', image:'http://www.thingsyouneedforcamping.com/wp-content/uploads/2016/11/camping.jpg'},
   {name: 'Bobcat Exit', image:'http://res.cloudinary.com/simpleview/image/upload/v1460743623/clients/roanoke/Roanoke_Camping_0834e03c-8e39-4cb2-9365-47120180f959.jpg'},
   {name: 'Owl Creek', image:'https://recreation-acm.activefederal.com/assetfactory.aspx?did=6787'},
+  {name: 'Longhorn Rest', image:'https://www.leadingcampings.com/media/1400_x_474/293135a0-90a3-4b2f-bffe-80377b3543fa/la-marina-camping-resort-in-spain.jpg'},
+  {name: 'ABC Lodge', image:'http://www.thingsyouneedforcamping.com/wp-content/uploads/2016/11/camping.jpg'},
+  {name: 'Bobcat Exit', image:'http://res.cloudinary.com/simpleview/image/upload/v1460743623/clients/roanoke/Roanoke_Camping_0834e03c-8e39-4cb2-9365-47120180f959.jpg'},
+  {name: 'Owl Creek', image:'https://recreation-acm.activefederal.com/assetfactory.aspx?did=6787'},
   {name: 'Longhorn Rest', image:'https://www.leadingcampings.com/media/1400_x_474/293135a0-90a3-4b2f-bffe-80377b3543fa/la-marina-camping-resort-in-spain.jpg'}
+
 ];
 
 app.get('/', function(req, res)
