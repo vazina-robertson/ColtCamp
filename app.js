@@ -7,10 +7,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
 
 const campgrounds = [
-  {name: 'ABC Lodge', image:'paul-itkin-46106.jpg'},
-  {name: 'Bobcat Exit', image:'teddy-kelley-181683.jpg'},
-  {name: 'Owl Creek', image:'ales-krivec-18049.jpg'},
-  {name: 'Longhorn Rest', image:'joshua-ness-109299.jpg'}
+  {name: 'ABC Lodge', image:'http://www.thingsyouneedforcamping.com/wp-content/uploads/2016/11/camping.jpg'},
+  {name: 'Bobcat Exit', image:'http://res.cloudinary.com/simpleview/image/upload/v1460743623/clients/roanoke/Roanoke_Camping_0834e03c-8e39-4cb2-9365-47120180f959.jpg'},
+  {name: 'Owl Creek', image:'https://recreation-acm.activefederal.com/assetfactory.aspx?did=6787'},
+  {name: 'Longhorn Rest', image:'https://www.leadingcampings.com/media/1400_x_474/293135a0-90a3-4b2f-bffe-80377b3543fa/la-marina-camping-resort-in-spain.jpg'}
 ];
 
 app.get('/', function(req, res)
@@ -25,7 +25,7 @@ app.get('/campgrounds', function(req, res)
 
 app.post('/campgrounds', function(req, res)
 {
-  res.send('post route');
+  //res.send('post route');
   //get data from form & add to campgrounds array
   const name = req.body.name;
   const image = req.body.image;
