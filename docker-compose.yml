@@ -1,0 +1,10 @@
+app:
+  image: vazina/colt-camp:latest
+  ports:
+    - 3000:3000
+  environment:
+    - IP=0.0.0.0
+  volumes:
+    - .:/opt/ColtCamp/app
+
+
