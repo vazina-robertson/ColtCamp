@@ -1,5 +1,5 @@
 run: kill build
-	docker-compose up
+	docker-compose up -d
 
 build:
 	docker build -t vazina/colt-camp:latest .
@@ -7,4 +7,3 @@ build:
 kill:
 	docker-compose kill || true
 	docker-compose rm -f || true
-
